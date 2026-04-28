@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE | Class XII Results 2026</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e9ecef; margin: 0; padding: 10px; }
+        .container { max-width: 900px; margin: auto; background: white; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .banner { background-color: #008080; color: white; padding: 15px; display: flex; align-items: center; border-bottom: 4px solid #f90; }
+        .login-screen { padding: 50px; text-align: center; }
+        .input-group { margin-bottom: 15px; }
+        input { padding: 10px; width: 250px; border: 1px solid #008080; border-radius: 4px; }
+        button { padding: 10px 25px; background: #008080; color: white; border: none; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        
+        #result-page { display: none; padding: 20px; }
+        .res-header { text-align: center; color: #1a1a5e; }
+        .student-info { margin: 20px 0; line-height: 1.6; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; border: 2px solid #333; }
+        th { background-color: #1a1a5e; color: white; padding: 10px; font-size: 13px; text-align: left; }
+        td { border: 1px solid #333; padding: 8px; font-size: 14px; }
+        .pass-box { background-color: #1a1a5e; color: white; padding: 8px; margin-top: 2px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container" id="login-box">
+    <div class="banner">
+        <h2>Central Board of Secondary Education</h2>
+    </div>
+    <div class="login-screen">
+        <h3>Senior School Certificate Examination (Class XII) Results 2026</h3>
+        <div class="input-group"><input type="text" id="r" placeholder="Enter Roll No."></div>
+        <div class="input-group"><input type="text" id="s" placeholder="Enter School Code"></div>
+        <button onclick="showResult()">Submit</button>
+    </div>
+</div>
+
+<div class="container" id="result-page">
+    <div class="banner" style="background-color: #00a8a8;">
+        <div>
+            <div style="font-size: 14px;">केंद्रीय माध्यमिक शिक्षा बोर्ड</div>
+            <div style="font-size: 18px; font-weight: bold;">Central Board of Secondary Education</div>
+        </div>
+    </div>
+    
+    <div style="padding: 20px;">
+        <h3 class="res-header">Examination Results<br>Senior School Certificate Examination (Class XII) Results 2026</h3>
+        
+        <div class="student-info">
+            Roll No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22609965<br>
+            Candidate Name: &nbsp;&nbsp; SUHANI KUMARI<br>
+            Mother's Name: &nbsp;&nbsp;&nbsp;&nbsp; MONI SAH<br>
+            Father's Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SANJEEV SAH<br>
+            School's Name: &nbsp;&nbsp;&nbsp;&nbsp; MJ PUBLIC SCHOOL AKBARNAGAR BHAGALPUR BR
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>SUB CODE</th><th>SUB NAME</th><th>THEORY</th><th>Prac./IA</th><th>MARKS</th><th>GRADE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>301</td><td>ENGLISH CORE</td><td>065</td><td>020</td><td>088</td><td>B1</td></tr>
+                <tr><td>042</td><td>PHYSICS</td><td>027</td><td>020</td><td>047</td><td>C2</td></tr>
+                <tr><td>043</td><td>CHEMISTRY</td><td>039</td><td>020</td><td>059</td><td>C2</td></tr>
+                <tr><td>044</td><td>HISTORY</td><td>057</td><td>020</td><td>077</td><td>B2</td></tr>
+                <tr><td>045</td><td>BIOLOGY</td><td>057</td><td>020</td><td>077</td><td>B2</td></tr>
+                <tr><td>048</td><td>PHYSICAL EDUCATION</td><td>061</td><td>029</td><td>090</td><td>A2</td></tr>
+                <tr><td>034</td><td>HIND MUSIC VOCAL</td><td>019</td><td>069</td><td>088 P</td><td>B1</td></tr>
+            </tbody>
+        </table>
+        <div class="pass-box">Result : PASS</div>
+    </div>
+</div>
+
+<script>
+function showResult() {
+    var roll = document.getElementById('r').value;
+    // This checks if the roll number matches the one in your image
+    if(roll === "22609965") {
+        document.getElementById('login-box').style.display = 'none';
+        document.getElementById('result-page').style.display = 'block';
+    } else {
+        alert("Invalid Roll Number or School Code.");
+    }
+}
+</script>
+
+</body>
+</html>
